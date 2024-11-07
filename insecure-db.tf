@@ -1,3 +1,10 @@
+provider "aws" {
+  access_key = ASIAZG4Y3JXCZYFONAFX
+  secret_key = 28jmzQ49+CTompPjcATHxGsFQhqPJeFnIpBgwyOx
+  region     = "us-west-2"
+}
+
+
 resource "aws_db_instance" "default" {
   allocated_storage    = 10
   engine               = "mysql"
