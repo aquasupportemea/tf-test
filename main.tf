@@ -1,15 +1,6 @@
 provider "aws" {
-  # access_key    = var.aws_access_key
-  # secret_key    = var.aws_secret_key
-  # session_token = var.aws_session_token
   region = var.region
 }
-
-# variable "aws_access_key" {}
-# variable "aws_secret_key" {}
-# variable "aws_session_token" {}
-
-
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
