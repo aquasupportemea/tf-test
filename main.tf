@@ -28,14 +28,14 @@ module "eks" {
   subnet_ids      = module.vpc.private_subnets
 
   # Node Group Configuration
-  node_groups = {
-    eks_nodes = {
-      desired_capacity = var.node_group_desired_capacity
-      max_capacity     = var.node_group_max_capacity
-      min_capacity     = var.node_group_min_capacity
+  # node_groups = {
+    # eks_nodes = {
+      # desired_capacity = var.node_group_desired_capacity
+      # max_capacity     = var.node_group_max_capacity
+      # min_capacity     = var.node_group_min_capacity
 
-      instance_type    = "t3.medium"
-      key_name         = "my-key-pair"
-    }
-  }
+      # instance_type    = "t3.medium"
+      # key_name         = "my-key-pair"
+    # }
+  # }
 }
